@@ -9,10 +9,12 @@ const Header = () => {
           My Portfolio
         </Link>
         <div className="right menu">
-          <NavLink id="about-tab"
+          <NavLink id
+            ="about-tab"
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
-          to="/about">
+            to="/about"
+          >
           About Me 
            </NavLink>
         <NavLink
@@ -20,7 +22,7 @@ const Header = () => {
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
           to="/projects">
-          My Projects
+          Projects
           </NavLink>
         </div>
         </div>
