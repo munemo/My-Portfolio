@@ -10,8 +10,8 @@ const About = () => {
           <UndrawDesignerLife/>
         </div>
         <div class="column"> 
-          <h1 className="ui-header" style={{ color: "red" }}>About Me</h1> 
-      <p >bla bla bla kkakaka</p>
+          <h1 className="ui-header">About Me</h1> 
+      <p >Here i will write a little about myself</p>
         </div>
       </div>
       </div>
