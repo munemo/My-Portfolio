@@ -9,7 +9,7 @@ describe("User can navigate the app", () => {
     });
 
     it("displays About Me header", () => {
-      cy.get("#about-header").should("contain", "About Me");;
+      cy.get("about-header").should("contain", "About Me");;
     });
 
     it("displays component name in url", () => {

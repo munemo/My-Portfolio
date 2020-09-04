@@ -4,24 +4,18 @@
 
 
 "id": 1,
-"name": "My First Website",
-"image": "",
-"description": ""
+"name": "Arkhive",
+"image": "./dist/images/Arkhive_3.png",
+"description":"Arkhive is a time management application for use in the homecare sector."
 
 },
 
 {
   "id":2,
-  "name": "FizzBuzz",
-  "image": "",
-  "description": ""
+  "name": "Pocktor",
+  "image": "./dist/images/pocktor_doctors.png",
+  "description": "Pocktor is an application for digital doctor appointments."
   
-},
-
-{
-"id": 3,
-"name": "My Site",
-"image": "",
-"description": ""
 }
+
 ]

@@ -45,15 +45,12 @@ class Projects extends Component {
       <div className="ui main container">
         <div className="ui stackable two column grid">
           <div className="column">
-            <UndrawDashboard />
+            
           </div>
           <div className="column">
             <h1 className="ui header">My Projects</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-              quod ab doloremque eaque. Consequatur temporibus, quos enim, eaque
-              nemo ad iusto sequi modi totam qui veniam? Ab asperiores inventore
-              distinctio.
+            <p className ="ui text">
+              Thank you for visiting my projects page. These are the projects that are part of my portfolio.
            </p>
           </div>
         </div>

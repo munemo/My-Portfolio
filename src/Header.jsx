@@ -26,7 +26,7 @@ const Header = () => {
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
           to="/projects">
-          Projects
+          My Projects
           </NavLink>
         </div>
        
