@@ -9,7 +9,7 @@ class Projects extends Component {
   componentDidMount() {
     axios.get('./src/data/projects.json')
       .then(response => {
-//  debugger
+
         this.setState({
           projects: response.data
 
@@ -48,7 +48,7 @@ class Projects extends Component {
           </div>
           <div className="column">
             <h1 className="ui header">My Projects</h1>
-            <p className ="ui text">
+            <p className ="ui header">
               Thank you for visiting my projects page. These are the projects that are part of my portfolio.
            </p>
           </div>

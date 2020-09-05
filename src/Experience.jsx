@@ -1,30 +1,45 @@
-import React from 'react'
 
-<<<<<<< HEAD
-const Experience = ({project}) => {
-  return (
-    <>
-      <div class="ui card">
-        <div class="image">
-          <img src={project.company} />
-        </div>
+import axios from "axios";
+import React, { Component } from "react";
 
-        <div class="content">
-          <h3 class="ui header">{project.job}</h3>
+class Education extends Component {
+  state = {
+    education: []
+  };
 
-          <div class="description">{project.period}</div>
-        </div>
-      </div>
-    </>
-  )
-=======
-const Experience = () => {
-  return (
-    <>
-      
-    </>
-  )nce
->>>>>>> 2ee81f75c92b7fec38438c7feb680e3d1435d35b
+
+  componentDidMount() {
+    
+    axios.get("./src/data/experience.json").then((response) => {
+
+      this.setState({
+        education: response.data,
+      });
+    });
+  }
+render () {
+
+  const education = this.state.education
+  
+  
+    let cvList 
+    if (education.length > 0) {
+      cvList = education.map(cv => {
+        return (
+          <div id={'cv-' + cv.id} key={cv.id}>
+          
+            <h1 >{cv.company}</h1>
+            <h1 >{cv.period}</h1>
+            <h1 >{cv.job}</h1>
+                      </div>
+        );
+      });
+    }
+
+  return (<h1 className="ui header">{cvList}</h1>  )
 }
+}
+ 
 
-export default Experience
+
+export default Education;
