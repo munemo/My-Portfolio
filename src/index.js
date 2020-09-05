@@ -6,8 +6,7 @@ import Projects from "./Projects";
 import Hello from "./Hello";
 import Header from "./Header";
 import Footer from "./Footer";
-import Education from "./Education"
-import Experience from "./Experience"
+import CV from "./CV"
 
 
 const App = () => {
@@ -22,9 +21,7 @@ const App = () => {
         <Route exact path="/" component={Hello}></Route>
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/projects" component={Projects}></Route>
-        <Route exact path="/education" component={Education}></Route>
-        <Route exact path="/experience" component={Experience}></Route>
-        
+        <Route exact path="/cv" component={CV}></Route>
       </Switch>
       <Footer />
     </>

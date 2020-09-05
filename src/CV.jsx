@@ -1,32 +1,33 @@
 import axios from "axios";
 import React, { Component } from "react";
+import Resume from "./Resume";
 
-class Education extends Component {
+class CV extends Component {
   state = {
-    education: []
+  experience: [],
+    cv: []
   };
 
 
   componentDidMount() {
     
     axios.get("./src/data/education.json").then((response) => {
-  
+    console.log(response.data);  
       this.setState({
-        education: response.data,
+        cv: response.data,
       });
     });
   }
 render () {
 
-  const education = this.state.education
-  
+  const cv = this.state.cv
   
     let cvList 
-    if (education.length > 0) {
-      cvList = education.map(cv => {
+    if (cv.length > 0) {
+      cvList = cv.map(cv => {
         return (
           <div id={'cv-' + cv.id} key={cv.id}>
-            <h1 >{cv.school}</h1>
+            <h1>{cv.school}</h1>
             <h1>{cv.program}</h1>
             <h1>{cv.period}</h1>
           </div>
@@ -34,10 +35,9 @@ render () {
       });
     }
 
-  return (<h1 className="ui header">{cvList}</h1>  )
+  return (
+    <h1>{cvList}</h1>)
 }
-}
- 
+ }
 
-
-export default Education;
+export default CV;
