@@ -1,5 +1,6 @@
 import React from 'react'
 
+<<<<<<< HEAD
 const Experience = ({project}) => {
   return (
     <>
@@ -16,6 +17,14 @@ const Experience = ({project}) => {
       </div>
     </>
   )
+=======
+const Experience = () => {
+  return (
+    <>
+      
+    </>
+  )nce
+>>>>>>> 2ee81f75c92b7fec38438c7feb680e3d1435d35b
 }
 
 export default Experience

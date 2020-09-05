@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import Hello from "./Hello";
 import Header from "./Header";
 import Footer from "./Footer";
-import CV from "./CV";
+import CV from "./CV"
 
 
 const App = () => {
