@@ -1,0 +1,19 @@
+[
+  {
+    "id":1,
+    "school": "Mälardalens Högskola (MDH)",
+    "period": "2009-2012",
+    "program": "Aeronautical Engineering"
+  },
+
+  {
+    "id": 2,
+    "school": "Kungliga tekniska högskolan (KTH)",
+    "period": "2013-2014",
+    "program": "Applied logistics"
+  }
+  
+
+
+
+]

@@ -1,15 +1,15 @@
 import axios from "axios";
 import React, { Component } from "react";
-import ProjectCard from "./ProjectCard"
+import Experience from "./Experience";
 
-class Projects extends Component {
+class Work extends Component {
   state = {
     projects: [],
   };
   componentDidMount() {
-    axios.get('./src/data/projects.json')
+    axios.get('./src/data/experience.json')
       .then(response => {
-//  debugger
+        //  debugger
         this.setState({
           projects: response.data
 
@@ -20,7 +20,7 @@ class Projects extends Component {
       )
 
 
-  } 
+  }
 
 
   render() {
@@ -29,9 +29,9 @@ class Projects extends Component {
     if (projects.length > 0) {
       projectsList = projects.map((project) => {
         return (
-          
+
           <div id={"project-" + project.id} key={project.id}>
-            <ProjectCard project={project} />
+            <Experience project={project} />
           </div>
 
         );
@@ -44,14 +44,9 @@ class Projects extends Component {
       <div className="ui main container" >
         <div className="ui stackable two column grid">
           <div className="column">
-            
+
           </div>
-          <div className="column">
-            <h1 className="ui header">My Projects</h1>
-            <p className ="ui text">
-              Thank you for visiting my projects page. These are the projects that are part of my portfolio.
-           </p>
-          </div>
+
         </div>
         <div className="ui stackable four column grid">{projectsList}</div>
       </div>
@@ -60,4 +55,4 @@ class Projects extends Component {
 }
 
 
-export default Projects;
+export default Work;
