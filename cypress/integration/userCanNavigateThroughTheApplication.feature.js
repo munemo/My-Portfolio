@@ -50,19 +50,24 @@ describe("User can navigate the app", () => {
   });
 
 
-  describe("to MY CV tab and it", () => {
+  describe("to MY Education tab and it", () => {
     beforeEach(() => {
-      cy.get("#cv-tab").click();
+      cy.get("#education-tab").click();
     });
 
-    it("displays My CV header", () => {
-      cy.get("#cv-tab").should("contain", "My CV");
+    it("displays My Education header", () => {
+      cy.get("#education-tab").should("contain", "Education");
     });
     it("displays component name in url", () => {
-      cy.url().should("contain", "cv");
+      cy.url().should("contain", "education");
     });
 
     it("does not display About Me header", () => {
+      cy.get("#about-header").should("not.exist");
+    });
+
+
+    it("does not display My projects header", () => {
       cy.get("#about-header").should("not.exist");
     });
     it("does not display Hello world", () => {

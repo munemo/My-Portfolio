@@ -10,7 +10,7 @@ const About = () => {
           <h1 className="ui-header" style={{
             justifyContent: "center",
             alignItems: "center"
-          }}>About Me</h1> 
+          }} className="about-tab">About Me</h1> 
       <p >Here i will write a little about myself</p>
         </div>
       </div>
