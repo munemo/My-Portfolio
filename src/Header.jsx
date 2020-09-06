@@ -5,38 +5,45 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="ui fixed inverted menu"  >
-      
+    <nav className="ui fixed inverted menu">
       <div className="ui container">
         <Link id="header" className="header item" to="/">
           My Portfolio
         </Link>
       </div>
-        <div className="right menu">
-          <NavLink id
-            ="about-tab"
+      <div className="right menu">
+        <NavLink
+          id="about-tab"
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
-            to="/about"
-          >
-          About Me 
-           </NavLink>
+          to="/about"
+        >
+          About Me
+        </NavLink>
         <NavLink
           id="projects-tab"
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
-          to="/projects">
+          to="/projects"
+        >
           My Projects
-          </NavLink>
+        </NavLink>
         <NavLink
           id="projects-tab"
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
-          to="/cv">
-          My CV
-          </NavLink>
-        </div>
-       
+          to="/education"
+        >
+          Education
+        </NavLink>
+        <NavLink
+          id="projects-tab"
+          className="ui item"
+          activeStyle={{ fontWeight: "bold" }}
+          to="/experience"
+        >  Experience
+        </NavLink>
+      </div>
     </nav>
   );
 };

@@ -1,16 +1,19 @@
 [
   {
+    "id":1,
     "company": "Alfa Laval",
     "period": "2014-2016",
     "job": "Information Engineer"
   },
   {
+    "id": 2,
     "company": "Combitech (consultant)",
     "period": "2013-2018",
     "job": "Information Engineer"
   },
 
   {
+    "id": 3,
     "company": "Semcon (consultant)",
     "period": "2018-",
     "job": "Information Engineer"
