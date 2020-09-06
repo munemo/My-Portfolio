@@ -73,6 +73,31 @@ describe("User can navigate the app", () => {
     it("does not display Hello world", () => {
       cy.get("#hello").should("not.exist");
     });
+   
+  });
+
+  describe("to Experience tab and it", () => {
+    beforeEach(() => {
+      cy.get("#experience-tab").click();
+    });
+
+    it("displays Experience header", () => {
+      cy.get("#experience-tab").should("contain", "Experience");
+    });
+    it("displays component name in url", () => {
+      cy.url().should("contain", "experience");
+    });
+
+    it("does not display About Me header", () => {
+      cy.get("#about-header").should("not.exist");
+    });
+
+    it("does not display My projects header", () => {
+      cy.get("#projects-header").should("not.exist");
+    });
+    it("does not display Hello world", () => {
+      cy.get("#hello").should("not.exist");
+    });
   });
 
 

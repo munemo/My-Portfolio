@@ -20,7 +20,7 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={Hello}></Route>
-        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/about me" component={About}></Route>
         <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/education" component={Education}></Route>
         <Route exact path="/experience" component={Experience}></Route>
