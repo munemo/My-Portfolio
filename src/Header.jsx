@@ -5,7 +5,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="ui fixed inverted menu">
+    <nav className="ui fixed inverted menu" style={{ color: "red" }}>
       <div className="ui container">
         <Link id="header" className="header item" to="/">
           My Portfolio
@@ -23,6 +23,7 @@ const Header = () => {
         <NavLink
           id="projects-tab"
           className="ui item"
+          className="header item"
           activeStyle={{ fontWeight: "bold" }}
           to="/projects"
         >
@@ -41,7 +42,9 @@ const Header = () => {
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
           to="/experience"
-        >  Experience
+        >
+          {" "}
+          Experience
         </NavLink>
       </div>
     </nav>

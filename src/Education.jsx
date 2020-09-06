@@ -25,10 +25,12 @@ render () {
     if (education.length > 0) {
       educationList = education.map((cv) => {
         return (
-          <div id={"cv-" + cv.id} key={cv.id}>
-            <h1 className="education school">{cv.school}</h1>
-            <h1 className="education program">{cv.program}</h1>
-            <h1 className="education period">{cv.period}</h1>
+          <div id={"cv-" + cv.id} key={cv.id} className="skills">
+            <div class="center-div">
+</div>
+            <h5 className="education school">{cv.school}</h5>
+            <h5 className="education program">{cv.program}</h5>
+            <h5 className="education period">{cv.period}</h5>
           </div>
         );
       });
@@ -36,7 +38,7 @@ render () {
 
   return (
     <h1 className="education-tab">{educationList}</h1>
-  
+
   
   )
 }

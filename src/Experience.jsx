@@ -20,16 +20,16 @@ class Experience extends Component {
     if (experience.length > 0) {
       educationList = experience.map((cv) => {
         return (
-          <div id={"cv-" + cv.id} key={cv.id}>
-            <h1>{cv.job}</h1>
-            <h1>{cv.company}</h1>
-            <h1>{cv.period}</h1>
+          <div id={"cv-" + cv.id} key={cv.id }className="skills">
+            <h5>{cv.job}</h5>
+            <h5>{cv.company}</h5>
+            <h5>{cv.period}</h5>
           </div>
         );
       });
     }
 
-    return <h1>{educationList}</h1>;
+    return <h1 className="skills">{educationList}</h1>;
   }
 }
 

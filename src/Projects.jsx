@@ -41,16 +41,18 @@ class Projects extends Component {
 
 
     return (
-      <div className="ui main container" >
+      <div className="ui main container">
+        <h1 id="heading" className="ui header">
+          My Projects
+        </h1>
+        <p id="text" className="ui text">
+          Thank you for visiting my projects page. These are the projects that
+          are part of my portfolio.
+        </p>
         <div className="ui stackable two column grid">
+          <div className="column"></div>
           <div className="column">
             
-          </div>
-          <div className="column">
-            <h1 className="ui header">My Projects</h1>
-            <p className ="ui text">
-              Thank you for visiting my projects page. These are the projects that are part of my portfolio.
-           </p>
           </div>
         </div>
         <div className="ui stackable four column grid">{projectsList}</div>
